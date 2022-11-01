@@ -1,0 +1,57 @@
+copy most of rich cli
+	copy most of most/less command line interface options
+use py for creating random logs, or find tool for doing that
+use/make logs testable
+video(ascinema?)play,pause,record,export,load
+
+statistics
+eyeballs, mouse position tracking
+mask=file, static-> watermark,  infomation may leak
+           dynamic-> waterwave, information remains masked
+plugin system
+devtool integration and workflow
+R.A.A.R: random autonomous acces rights
+	raar may be combined by different viewers
+streams : (code stream)
+	mix
+        merge
+        overlay
+	substract
+	add
+
+search/highlight string/regex
+	multiline -> object detection
+masking/hiding/encryption
+split stream into safe and 
+colaboration/sharing
+track highlight objects
+	
+multiple files
+multiple mask
+faster grid overlaying, numpy,pandas,??
+ascii: gif,movie, ffmpeg ecs
+
+loogck clients for logs and streamings tech
+	"syntax" hihjlighting for formats
+	default for standard data types:str/float/bool/date
+	for structs: kv,structured log, jsonlines, xmlines
+
+
+examples:
+        smurf
+	eyeballs, mouse position tracking
+
+
+    mask  (static,dynamic)
+    paginator:follow/scroll/search
+    searching/highlight
+        filter regex
+        filter time
+        filter, only show matching lines
+        syntax highlighting for different kind of log formats
+        syntax highlighting for embedded code in logs, json,xml,any
+        no finding masked content
+    screen saver like log viewer with data hiding/seeking capabilities
+    splitter/joiner
+    import loogck as l3
+

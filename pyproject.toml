@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "loogck"
+version = "0.1.0"
+description = "loogck=log+look+lock"
+authors = ["rdl yldz"]
+license = "TBD"
+
+[tool.poetry.dependencies]
+python = ">3.10,<3.12"
+rich = "^12.6.0"
+hexy = {git = "https://github.com/e7dal/hexy"}
+pypager = "^3.0.0"
+aiofile = "^3.8.1"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.5.0"
+scalene = "^1.5.13"
+slipcover = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+loogck = "loogck.cli:follow"
+
