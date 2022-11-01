@@ -17,8 +17,7 @@ if sys.version_info >= (3, 8):
 else:
     from typing_extensions import Literal
 
-from file_tail import FileTail
-from bounce import BoxMoves
+from .file_tail import FileTail
 
 @dataclass
 class Log:

@@ -8,10 +8,13 @@
 
 
 installing:
-```git clone https://github.com/e7dal/loogck
+```
+git clone https://github.com/e7dal/loogck
 cd loogck
-poetry shell
 poetry install
+poetry shell
+poetry build 
+pip install dist/loogck-0.1.0-py3-none-any.whl 
 ```
 
 first create a proces that will genrate some random log:
