@@ -1,8 +1,10 @@
 **mr data: captain i see a klingon warbird de-cloaking in the logfiles**
 
  what's in a name?
+ 
  loogck = log + look + lock
- loogvk a.k.a. l3   (d3,s3,bu3,...)
+ 
+ loogck a.k.a. l3   (d3,s3,bu3,...)
 
 
 installing:
@@ -24,3 +26,5 @@ $loogck data.txt -m static
 $loogck data.txt -m bounce
 $loogck data.txt -m hexify
 ```
+
+(:you can also see these demo's in the demo folder:)
