@@ -5,7 +5,7 @@ name: Build
 
 jobs:
   Build:
-    name: Release
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,12 +21,12 @@ jobs:
 
       - name: Update PATH
         run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+      
+      - name: Install in poetry env
+        run: poetry install 
 
-      - name: Build project for distribution
+      - name: Run poetry shell
         run: poetry build
 
-      - name: Check Version
-        id: check-version
-        run: |
-          [[ "$(poetry version --short)" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] \
-            || echo ::set-output name=prerelease::true
+      - name: Run loogck command
+        run: loogck
